@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Layout from '../components/Layout'
 import styles from '../css/blog.module.css'
 
-console.log(styles);
+// console.log(styles);
 
 export default class blog extends Component {
     render() {

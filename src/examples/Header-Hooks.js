@@ -23,7 +23,7 @@ const Header = () => {
   // below explanation: destructure and give it an alias of info
   const { site: { siteMetadata: info } } = useStaticQuery(getData)
   // console.log(data); << before destructuring
-  console.log(info);
+  // console.log(info);
   return (
     <div>
       {/* <h1>Author:{data.site.siteMetadata.author}</h1> << before destructuring */}
