@@ -18,18 +18,18 @@ query {
 `
 
 const HeaderStatic = () => {
-    return (
-        <StaticQuery query={getData} render={data => {
-            console.log(data)
-            return (
-                <div>
-                    <p>{data.site.siteMetadata.description}</p>
-                </div>
-            )
-        }}>
+  return (
+    <StaticQuery query={getData} render={data => {
+      // console.log(data)
+      return (
+        <div>
+          <p>{data.site.siteMetadata.description}</p>
+        </div>
+      )
+    }}>
 
-        </StaticQuery>
-    )
+    </StaticQuery>
+  )
 }
 
 export default HeaderStatic
