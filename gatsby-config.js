@@ -30,5 +30,11 @@ module.exports = {
         path: `${__dirname}/src/posts/`,
       },
     },
-    `gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
+
+  ],
+
 }
