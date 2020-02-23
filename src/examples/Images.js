@@ -20,29 +20,36 @@ const getImg = graphql`
         }
       }
     }
+    example: file(relativePath: {eq: "img2.jpg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
   }
   
 `
 
 const Images = () => {
-    const data = useStaticQuery(getImg);
-    // console.log(data);
-    return (
-        <Wrapper>
-            <article>
-                <h3>basic img</h3>
-                <img src={img} className="basic" />
-            </article>
-            <article>
-                <h3>fixed img/blur</h3>
-                <Image fixed={data.fixed.childImageSharp.fixed} />
-            </article>
-            <article>
-                <h3>fluid img/svg</h3>
-                <Image fluid={data.fluid.childImageSharp.fluid} />
-            </article>
-        </Wrapper>
-    )
+  const data = useStaticQuery(getImg);
+  // console.log(data);
+  return (
+    <Wrapper>
+      <article>
+        <h3>basic img</h3>
+        <img src={img} alt="example" className="basic" />
+      </article>
+      <article>
+        <h3>fixed img/blur</h3>
+        <Image fixed={data.fixed.childImageSharp.fixed} />
+      </article>
+      <article>
+        <h3>fluid img/svg</h3>
+        <Image fluid={data.fluid.childImageSharp.fluid} />
+      </article>
+    </Wrapper>
+  )
 }
 
 const Wrapper = styled.section`
