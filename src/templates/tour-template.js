@@ -1,6 +1,7 @@
 import React from 'react'
 
-const TourTemplate = () => {
+const TourTemplate = props => {
+    console.log(props)
     return (
         <div>
             template test
