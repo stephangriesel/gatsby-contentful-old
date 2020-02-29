@@ -34,7 +34,7 @@ query($slug:String!) {
       }
       images {
         fluid {
-          srcSet
+          ...GatsbyContentfulFluid_tracedSVG
         }
       }
     }
