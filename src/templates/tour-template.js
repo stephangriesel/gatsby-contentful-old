@@ -19,17 +19,25 @@ const TourTemplate = ({ data }) => {
     journey
   } = data.tour
   return (
-    <div>
-      template test
+    <Layout>
+      <section className={styles.template}>
+        <div className={styles.center}>
+          <div className={styles.images}>
+            {images.map((item, index) => {
+              return <Image key={index} fluid={item.fluid} alt={name} className={styles.image} />
+            })}
+          </div>
         </div>
+      </section>
+    </Layout>
   )
 }
 
 
 export const query = graphql`
 query($slug:String!) {
-    tour:contentfulTourExample(slug:{eq:$slug}){
-      name
+        tour:contentfulTourExample(slug:{eq:$slug}){
+        name
       price
       country
       days
@@ -37,14 +45,14 @@ query($slug:String!) {
       journey {
         day
         info
-      }
+    }
       description{
         description
       }
       images {
         fluid {
-          ...GatsbyContentfulFluid_withWebp
-        }
+        ...GatsbyContentfulFluid_withWebp
+      }
       }
     }
   }
