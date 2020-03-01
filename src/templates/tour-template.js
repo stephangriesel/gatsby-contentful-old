@@ -7,13 +7,22 @@ import { FaMoneyBillWave, FaMap } from 'react-icons/fa'
 import { Link } from 'gatsby'
 
 
-const TourTemplate = props => {
-    console.log(props)
-    return (
-        <div>
-            template test
+const TourTemplate = ({ data }) => {
+  const {
+    name,
+    price,
+    country,
+    days,
+    description: { description },
+    images,
+    start,
+    journey
+  } = data.tour
+  return (
+    <div>
+      template test
         </div>
-    )
+  )
 }
 
 
