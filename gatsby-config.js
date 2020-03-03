@@ -36,11 +36,21 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_TOKEN,
       },
     },
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Product", "Sku"],
+        secretKey: process.env.API_KEY,
+        downloadFiles: true
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-playground`,
+    `gatsby-plugin-stripe`,
+
 
   ],
 
