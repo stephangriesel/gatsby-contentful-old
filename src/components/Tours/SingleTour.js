@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { FaMap } from 'react-icons/fa'
 import Image from 'gatsby-image'
 import styles from '../../css/tour.module.css'
+import Products from '../products'
 // Validate Props with PropTypes
 import PropTypes from 'prop-types'
 
@@ -28,6 +29,10 @@ const SingleTour = ({ tour }) => {
                     <h6>{days} days</h6>
                     <h6>from  ${price}</h6>
                 </div>
+
+            </div>
+            <div>
+                <Products />
             </div>
         </article>
     )
