@@ -6,12 +6,12 @@ import '../css/layout.css'
 const Layout = ({ children }) => {
     console.log(children);
     return (
-        <>
+        <div className="wrapper">
             <Navbar />
             <main>
                 {children}
             </main>
-        </>
+        </div>
     )
 }
 

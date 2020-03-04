@@ -4,13 +4,13 @@ import Layout from '../components/Layout'
 import { graphql } from 'gatsby' // querying inside page so would need this
 
 const tours = ({ data }) => {
-    // console.log(data)
-    return (
-        <Layout>
-            tours
-            <Tours tours={data.tours.edges} />
-        </Layout>
-    )
+  // console.log(data)
+  return (
+    <Layout>
+      <h1>Tours</h1>
+      <Tours tours={data.tours.edges} />
+    </Layout>
+  )
 }
 
 /**  remember if using images to replace dummy data (src) with fragment from gatsby image docs:
