@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 const Product = ({ skus, product, image }) => {
     const stripe = window.Stripe(`${process.env.STRIPE_PK}`)
+    // const stripe = typeof (window.Stripe(`${process.env.STRIPE_PK}`)) !== `undefined` ? require("stripe") : null
+    // console.log("stripe check" + stripe);
 
     const [sku, setSku] = useState(skus[0].node.id);
 

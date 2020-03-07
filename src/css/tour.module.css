@@ -8,7 +8,7 @@
 
 .img-container {
   position: relative;
-  background: #3fd0d4;
+  background: rgb(255, 255, 255);
   transition: all 0.3s linear;
 }
 .img {
@@ -36,7 +36,7 @@
 }
 .link:hover {
   background: #fff;
-  color: #3fd0d4;
+  color: #bbbbbb;
 }
 .img-container:hover .link {
   opacity: 1;
@@ -64,7 +64,7 @@
 }
 .country {
   text-transform: capitalize;
-  color: #3fd0d4;
+  color: #6b6b6b;
   display: flex;
   align-items: center;
 }
