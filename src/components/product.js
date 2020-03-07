@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 
 const Product = ({ skus, product, image }) => {
+    // Troubleshooting documention for build
+    // https://www.gatsbyjs.org/docs/debugging-html-builds/
+    // https://www.gatsbyjs.org/docs/processing-payments-with-stripe/
     const [stripe, setStripe] = useState(null)
     useEffect(() => {
         if (typeof window !== undefined && typeof window.Stripe !== undefined) {
