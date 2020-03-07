@@ -27,7 +27,7 @@ const Product = ({ skus, product, image }) => {
         <article>
             {/* <img src={image} alt="Shirt" /> */}
             <h3>{product.name}</h3>
-            <select value={sku} onBlur={(e) => setSku(e.target.value)}>
+            <select value={sku} onChange={(e) => setSku(e.target.value)}>
                 {skus.map(edge =>
                     <option
                         key={edge.node.id} value={edge.node.id}>{edge.node.attributes.name}
