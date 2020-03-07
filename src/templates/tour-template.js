@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import styles from '../css/template.module.css'
 import Image from 'gatsby-image'
 import { FaMoneyBillWave, FaMap } from 'react-icons/fa'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 
 
 const TourTemplate = ({ data }) => {
