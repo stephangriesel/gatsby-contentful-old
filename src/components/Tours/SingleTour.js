@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { FaMap } from 'react-icons/fa'
 import Image from 'gatsby-image'
 import styles from '../../css/tour.module.css'
-import Products from '../products'
+// import Products from '../products'
 // Validate Props with PropTypes
 import PropTypes from 'prop-types'
 
@@ -32,7 +32,7 @@ const SingleTour = ({ tour }) => {
 
             </div>
             <div>
-                <Products />
+                <button><Link to="/book/">Book My Spot</Link></button>
             </div>
         </article>
     )

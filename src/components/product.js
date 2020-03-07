@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Product = ({ skus, product, image }) => {
-    const stripe = window.Stripe(`${process.env.STRIPE_PK}`)
-    // const stripe = typeof (window.Stripe(`${process.env.STRIPE_PK}`)) !== `undefined` ? require("stripe") : null
-    // console.log("stripe check" + stripe);
+    const [stripe, setStripe] = useState(null)
+    useEffect(() => {
+        if (typeof window !== undefined && typeof window.Stripe !== undefined) {
+            setStripe(window.Stripe(`${process.env.STRIPE_PK}`))
+        }
+    }, [])
+    // const stripe = window.Stripe(`${process.env.STRIPE_PK}`) // < old version 
 
     const [sku, setSku] = useState(skus[0].node.id);
 
@@ -31,7 +35,7 @@ const Product = ({ skus, product, image }) => {
                 )}
 
             </select>
-            <button onClick={placeOrder}>Buy</button>
+            <button onClick={placeOrder}>Book My Spot</button>
         </article>
     )
 }
