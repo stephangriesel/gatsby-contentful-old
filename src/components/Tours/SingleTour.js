@@ -32,7 +32,7 @@ const SingleTour = ({ tour }) => {
 
             </div>
             <div>
-                <button><Link to="/book/">Book My Spot</Link></button>
+                <button><Link to="/details/">Book My Spot</Link></button>
             </div>
         </article>
     )
