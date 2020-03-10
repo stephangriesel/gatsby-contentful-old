@@ -32,7 +32,7 @@ export default function Contact() {
 
     return (
         <Layout>
-            <h1>Contact</h1>
+            <h1>Booking - Details</h1>
             <form
                 name="booking"
                 method="post"
@@ -48,28 +48,25 @@ export default function Contact() {
                     </label>
                 </p>
                 <p>
-                    <label>
-                        Your name:
-            <br />
-                        <input type="text" name="name" onChange={handleChange} />
-                    </label>
+                    {/* <label>
+                        Your name: */}
+                    <input type="text" placeholder="Your Full Name" name="name" onChange={handleChange} />
+                    {/* </label> */}
                 </p>
                 <p>
-                    <label>
-                        Your email:
-            <br />
-                        <input type="email" name="email" onChange={handleChange} />
-                    </label>
+                    {/* <label>
+                        Your email: */}
+                    <input type="email" placeholder="Your Email Address" name="email" onChange={handleChange} />
+                    {/* </label> */}
                 </p>
                 <p>
-                    <label>
-                        Message:
-            <br />
-                        <textarea name="message" onChange={handleChange} />
-                    </label>
+                    {/* <label>
+                        Your contact number: */}
+                    <input name="text" placeholder="Your Contact Number" name="contact-number" onChange={handleChange} />
+                    {/* </label> */}
                 </p>
                 <p>
-                    <button type="submit">Send</button>
+                    <button type="submit">Confirm & Pay</button>
                 </p>
             </form>
         </Layout>
