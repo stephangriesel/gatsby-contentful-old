@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../components/Layout'
+import styles from '../css/details.module.css'
 
 function encode(data) {
     return Object.keys(data)
@@ -32,7 +33,7 @@ export default function Contact() {
 
     return (
         <Layout>
-            <h1>Booking - Details</h1>
+            <h1>Booking</h1>
             <form
                 name="booking"
                 method="post"
@@ -50,23 +51,23 @@ export default function Contact() {
                 <p>
                     {/* <label>
                         Your name: */}
-                    <input type="text" placeholder="Your Full Name" name="name" onChange={handleChange} />
+                    <input class={styles.input} type="text" placeholder="Your Full Name" name="name" onChange={handleChange} />
                     {/* </label> */}
                 </p>
                 <p>
                     {/* <label>
                         Your email: */}
-                    <input type="email" placeholder="Your Email Address" name="email" onChange={handleChange} />
+                    <input class={styles.input} type="email" placeholder="Your Email Address" name="email" onChange={handleChange} />
                     {/* </label> */}
                 </p>
                 <p>
                     {/* <label>
                         Your contact number: */}
-                    <input name="text" placeholder="Your Contact Number" name="contact-number" onChange={handleChange} />
+                    <input class={styles.input} name="text" placeholder="Your Contact Number" name="contact-number" onChange={handleChange} />
                     {/* </label> */}
                 </p>
                 <p>
-                    <button type="submit">Confirm & Pay</button>
+                    <button class={styles.btn} type="submit">Confirm & Pay</button>
                 </p>
             </form>
         </Layout>
