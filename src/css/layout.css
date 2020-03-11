@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
+/* https://flatuicolors.com/palette/nl */
+
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  color: #000;
 }
 
 .wrapper {
