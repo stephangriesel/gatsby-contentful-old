@@ -53,23 +53,23 @@ export default function ContactUs() {
                 <p>
                     {/* <label>
                         Your name: */}
-                    <input type="text" placeholder="Your Full Name" name="name" onChange={handleChange} />
+                    <input class={styles.input} type="text" placeholder="Your Full Name" name="name" onChange={handleChange} />
                     {/* </label> */}
                 </p>
                 <p>
                     {/* <label>
                         Your email: */}
-                    <input type="email" placeholder="Your Email Address" name="email" onChange={handleChange} />
+                    <input class={styles.input} type="email" placeholder="Your Email Address" name="email" onChange={handleChange} />
                     {/* </label> */}
                 </p>
                 <p>
                     {/* <label>
                         Your contact number: */}
-                    <input name="text" placeholder="Your Contact Number" name="contact-number" onChange={handleChange} />
+                    <input class={styles.input} name="text" placeholder="Your Contact Number" name="contact-number" onChange={handleChange} />
                     {/* </label> */}
                 </p>
                 <p>
-                    <button type="submit">Let's Talk!</button>
+                    <button class={styles.btn} type="submit">Let's Talk!</button>
                 </p>
             </form>
         </Layout>
