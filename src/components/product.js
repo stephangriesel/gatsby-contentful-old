@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import styles from '../css/booking.module.css';
 
 const Product = ({ skus, product, image }) => {
     // Troubleshooting documention for build
@@ -27,9 +28,9 @@ const Product = ({ skus, product, image }) => {
         })
     }
     return (
-        <article>
+        <article class={styles.booking}>
             {/* <img src={image} alt="Shirt" /> */}
-            <h3>{product.name}</h3>
+            <h3 class={styles.productName}>{product.name}</h3>
             <select value={sku} onChange={(e) => setSku(e.target.value)}>
                 {skus.map(edge =>
                     <option
@@ -38,7 +39,7 @@ const Product = ({ skus, product, image }) => {
                 )}
 
             </select>
-            <button onClick={placeOrder}>Book My Spot</button>
+            <button class={styles.btn} onClick={placeOrder}>Book My Spot</button>
         </article>
     )
 }

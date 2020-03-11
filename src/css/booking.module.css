@@ -1,0 +1,37 @@
+.productName {
+  text-align: center;
+  padding: 1em;
+}
+
+.booking {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  background: #ee5a24;
+  padding: 1em 1.5em;
+  margin: 0.5em 0em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 2em 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: ease-in-out 0.5s;
+  background: #f79f1f;
+}
+
+select {
+  border: none;
+  background: #a3938d;
+  padding: 1em 1.5em;
+  margin: 0.5em 0em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 2em 0;
+  cursor: pointer;
+  font-size: 1em;
+}
