@@ -1,6 +1,7 @@
 .btn {
   border: none;
   background: #ee5a24;
+  color: #fff;
   padding: 1em 1.5em;
   margin: 0.5em 0em;
   text-transform: uppercase;
@@ -23,6 +24,9 @@ form {
 }
 
 .input {
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  font-weight: 900;
   border: none;
   padding: 1.5em 0em;
   outline: none;
