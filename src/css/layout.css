@@ -2,13 +2,13 @@
 
 /* https://flatuicolors.com/palette/nl */
 
+a {
+  color: #000;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
-}
-
-a {
-  color: #000;
 }
 
 .wrapper {
@@ -21,7 +21,6 @@ a {
 }
 
 body {
-  color: #222;
   font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
