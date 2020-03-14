@@ -1,7 +1,8 @@
 import React from 'react'
 import SingleUpdate from './SingleUpdate'
 
-const ListUpdates = () => {
+const ListUpdates = ({ updates }) => {
+    console.log(updates)
     return (
         <div>
             Listing of updates
@@ -9,5 +10,4 @@ const ListUpdates = () => {
         </div>
     )
 }
-
 export default ListUpdates
