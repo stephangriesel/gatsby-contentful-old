@@ -5,8 +5,9 @@ const ListUpdates = ({ updates }) => {
     console.log(updates)
     return (
         <div>
-            Listing of updates
-            <SingleUpdate />
+            {updates.map(({ node }) => {
+                return <SingleUpdate key={node.id} update={node} />
+            })}
         </div>
     )
 }

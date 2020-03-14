@@ -38,4 +38,3 @@ query {
 `
 
 export default home
-
