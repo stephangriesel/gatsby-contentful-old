@@ -25,7 +25,7 @@ query {
         contId: contentful_id
         images: updatesMedia {
           fluid {
-            srcWebp
+            ...GatsbyContentfulFluid_withWebp
           }
         }
         updatesDescription {

@@ -9,7 +9,6 @@ const Navbar = () => {
                 <h1>Stephan's Tours</h1>
             </div> */}
             <nav>
-                <h1>Stephan's Tours</h1>
                 <ul className={styles.menu}>
                     <li><Link to="/">Home</Link></li>
                     {/* <li><Link to="/blog/">Blog</Link></li> */}

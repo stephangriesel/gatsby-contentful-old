@@ -1,0 +1,11 @@
+.img-container {
+  position: relative;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s linear;
+}
+.img {
+  transition: all 0.3s linear;
+}
+.img-container:hover .img {
+  opacity: 0.3;
+}
