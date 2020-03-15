@@ -2,8 +2,19 @@
 
 /* https://flatuicolors.com/palette/nl */
 
+#___gatsby {
+  width: 100%;
+}
+
 a {
   color: #000;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
 }
 
 * {
@@ -18,13 +29,6 @@ a {
   padding-right: 10px;
   padding-left: 10px;
   background: #ffffff;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
 }
 
 main {
