@@ -15,6 +15,7 @@ li {
   list-style: none;
   margin: 1em 0.2em;
   padding: 0.5em;
+  cursor: pointer;
 }
 
 ul {
@@ -26,7 +27,6 @@ li:hover {
   transition: ease-in 0.8s;
   border-radius: 20%;
   background-color: #ee5a24;
-  color: #fff;
 }
 
 li:hover a {
