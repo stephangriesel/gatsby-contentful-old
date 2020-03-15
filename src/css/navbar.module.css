@@ -24,11 +24,8 @@ ul {
 
 li:hover {
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
-  transition: ease-in 0.8s;
+  transition: ease-in 0.4s;
   border-radius: 20%;
   background-color: #ee5a24;
-}
-
-li:hover a {
   color: #fff;
 }
