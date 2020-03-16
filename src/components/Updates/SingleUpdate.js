@@ -10,14 +10,16 @@ const SingleUpdate = ({ update }) => {
     console.log(updateImage)
     return (
         <section>
-            <div className={styles.imgContainer}>
-                <Image src={updateImage} fluid={updateImage} alt={updatesTitle} />
-            </div>
-            <div>
-                <h3>{updatesTitle}</h3>
-                <h6>{updatesDate}</h6>
-                <p>{updatesDescription}</p>
-                <Link to={`/${updatesSlug}`}>.. more</Link>
+            <div className={styles.gridWrapper}>
+                <div className={styles.imgContainer}>
+                    <Image className={styles.img} src={updateImage} fluid={updateImage} alt={updatesTitle} />
+                </div>
+                <div className={styles.updateText}>
+                    <h3>{updatesTitle}</h3>
+                    <h6>{updatesDate}</h6>
+                    <p>{updatesDescription}</p>
+                    <Link to={`/${updatesSlug}`}>.. more</Link>
+                </div>
             </div>
         </section>
     )
