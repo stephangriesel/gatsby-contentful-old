@@ -6,14 +6,14 @@
 .gridWrapper {
   display: grid;
   grid-gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .img {
   width: 20em;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 300px) {
   .updateText {
     grid-column: auto / span 2;
   }
