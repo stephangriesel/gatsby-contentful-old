@@ -8,7 +8,7 @@ const Product = ({ skus, product, image }) => {
     const [stripe, setStripe] = useState(null)
     useEffect(() => {
         if (typeof window !== undefined && typeof window.Stripe !== undefined) {
-            setStripe(window.Stripe(`${process.env.STRIPE_PK}`))
+            setStripe(window.Stripe(`${process.env.GATSBY_STRIPE_PK}`))
         }
     }, [])
     // const stripe = window.Stripe(`${process.env.STRIPE_PK}`) // < old version 

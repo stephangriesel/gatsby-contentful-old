@@ -40,7 +40,7 @@ module.exports = {
       resolve: `gatsby-source-stripe`,
       options: {
         objects: ["Product", "Sku"],
-        secretKey: process.env.API_KEY,
+        secretKey: process.env.GATSBY_API_KEY,
         downloadFiles: true
       },
     },
