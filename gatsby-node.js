@@ -1,8 +1,12 @@
 const path = require('path');
-exports.createPages = async ({ actions, graphql }) => {
-    const { createPage } = actions;
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
-    const { data } = await graphql(`query {
+exports.createPages = async ({ actions, graphql }) => {
+  const { createPage } = actions;
+
+  const { data } = await graphql(`query {
         tours:allContentfulTourExample {
           edges{
             node{
@@ -12,13 +16,13 @@ exports.createPages = async ({ actions, graphql }) => {
         }
       }
     `)
-    data.tours.edges.forEach(({ node }) => {
-        createPage({
-            path: `tours/${node.slug}`,
-            component: path.resolve('./src/templates/tour-template.js'),
-            context: {
-                slug: node.slug,
-            },
-        })
+  data.tours.edges.forEach(({ node }) => {
+    createPage({
+      path: `tours/${node.slug}`,
+      component: path.resolve('./src/templates/tour-template.js'),
+      context: {
+        slug: node.slug,
+      },
     })
+  })
 }
