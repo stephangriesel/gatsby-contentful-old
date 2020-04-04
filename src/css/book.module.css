@@ -1,0 +1,24 @@
+.bookingGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.bookingGrid article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+}
+
+.bookingGrid img {
+  width: 10em;
+}
+
+@media only screen and (max-width: 600px) {
+  .bookingGrid {
+    display: flex;
+    flex-direction: column;
+  }
+}

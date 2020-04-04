@@ -29,18 +29,18 @@ const Product = ({ skus, product, image }) => {
     }
     return (
         <article class={styles.booking}>
-            {/* <img src={image} alt="Shirt" /> */}
+            <img src={image} alt="Shirt" />
             <h3 class={styles.productName}>{product.name}</h3>
             <select value={sku} onChange={(e) => setSku(e.target.value)}>
                 {skus.map(edge =>
-                    <option
-                        key={edge.node.id} value={edge.node.id}>{edge.node.attributes.name}
+                    < option
+                        key={edge.node.id} value={edge.node.id} > {edge.node.attributes.name}
                     </option>
                 )}
 
             </select>
             <button class={styles.btn} onClick={placeOrder}>Book My Spot</button>
-        </article>
+        </article >
     )
 }
 
