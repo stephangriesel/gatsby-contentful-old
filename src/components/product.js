@@ -23,8 +23,8 @@ const Product = ({ skus, product, image }) => {
                     quantity: 1
                 }
             ],
-            successUrl: "http://localhost:8000/success",
-            cancelUrl: "http://localhost:8000/cancel"
+            successUrl: "https://stephantours.netlify.com/success/",
+            cancelUrl: "https://stephantours.netlify.com/cancel/"
         })
     }
     return (
